@@ -8,6 +8,7 @@ import settingRes from './resources/SettingResources.js';
 import productRes from './resources/ProductResources.js';
 import orderRes from './resources/OrderResources.js';
 import orderItemRes from './resources/OrderItemResources.js';
+import categoryRes from './resources/CategoryResources.js';
 
 AdminJS.registerAdapter(AdminJSSequelize);
 
@@ -26,7 +27,7 @@ const adminJs = new AdminJS({
   componentLoader,
   resources: [
     { resource: User,      options: userRes.options },
-    { resource: Category },
+    { resource: Category,  options: categoryRes.options },
     { resource: Product,   options: productRes.options },
     { resource: Order,     options: orderRes.options },
     { resource: OrderItem,   options: orderItemRes.options },

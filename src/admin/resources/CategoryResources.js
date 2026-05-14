@@ -1,8 +1,7 @@
-const productResources = {
+const categoryResources = {
   options: {
     properties: {                   // ← only properties here
-      categoryId: {
-        reference: 'Categories',
+      name: {
         isVisible: { list: true, show: true, edit: true, filter: true },
       },
     },
@@ -19,4 +18,4 @@ const productResources = {
   },
 };
 
-export default productResources;
+export default categoryResources;
